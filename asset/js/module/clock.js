@@ -1,5 +1,5 @@
-const timer = document.getElementById("clock")
 export default function clock(){
+    const timer = document.getElementById("clock")
     let date = new Date
     const Y = date.getFullYear()
     const M = date.getMonth()+1 //compris entre 0 et 11 ... 
@@ -10,5 +10,4 @@ export default function clock(){
     const string = J+"/"+M+"/"+Y+" "+H+":"+Min+":"+S
     timer.innerHTML = string
     setTimeout(clock ,1000)
-    
 }
