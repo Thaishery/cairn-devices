@@ -5,12 +5,13 @@ export default function carousel(){
   const leftArrow = document.getElementsByClassName('carouselle__item__left__arrow')
   var curPos = 0;
 
-  setInterval(nextSlide, 10*1000)
+  const timedNextSlide = setInterval(nextSlide, 10*1000)
 
-  rightArrow[0].addEventListener("click",nextSlide)
-  leftArrow[0].addEventListener("click",previousSlide)
+  rightArrow[0].addEventListener("click",(e)=>{nextSlide(e)})
+  leftArrow[0].addEventListener("click",(e)=>{previousSlide(e)})
   
-  function nextSlide(){
+  function nextSlide(e){
+    if(e)clearInterval(timedNextSlide)
     carouselsImages[curPos].classList.remove('--active')
     dots[curPos].classList.remove('--active')
     if(curPos < carouselsImages.length -1 ) curPos++
@@ -18,8 +19,9 @@ export default function carousel(){
     carouselsImages[curPos].classList.add('--active')
     dots[curPos].classList.add('--active')
   }
-  
-  function previousSlide(){
+
+  function previousSlide(e){
+    if(e)clearInterval(timedNextSlide)
     carouselsImages[curPos].classList.remove('--active')
     dots[curPos].classList.remove('--active')
     if(curPos > 0 ) curPos --
