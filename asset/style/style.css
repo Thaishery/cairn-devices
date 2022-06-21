@@ -8,15 +8,12 @@
 .carouselle__item__section{
   display: flex;
 }
-.carouselle__item__left__arrow{
-  position:relative;
-  left: -600px;
-  width: 50px;
-  margin: 0 0;
+.--active{
+  display: initial !important;
 }
-.carouselle__item__right__arrow{
-  position:relative;
-  right: 100px;
-  width: 50px;
-  margin: 0 0;
+.carouselle__item__image__container{
+  display: none;
+}
+.carousell__iteme__botom_dot{
+  display: none;
 }
