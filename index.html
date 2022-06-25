@@ -1,152 +1,91 @@
 <!DOCTYPE html>
 <html lang="fr">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="asset/style/style.css">
-  <link rel="stylesheet" href="asset/style/reboot.css">
-  <script type="module" src="asset/js/main.js"></script>
-  <title>Cairn Device</title>
-</head>
-<body>
-  <header class="header">
-    <div class="header__logo">
-      <img class="header__logo__image">
-    </div>
-    <div class="header__title">
-      <h1 class="header__title__text">Cairn Devices</h1>
-    </div>
-    <div class="header__dateWidget">
-    </div>
-    <nav class="header__burger">
-      <ul>
-        <li>
-          <a href="#">Accueil</a>
-        </li>
-        <li>
-          <a href="#">Mon 2eme lien</a>
-        </li>
-      </ul>
-    </nav>
-  </header>
-  <!-- <section class="carouselle">
-    <div class="carousel__item carousel__ite">
-      <h2 class="carouselle__item__title">Cairn Mesa | Key</h2>
-      <div class="carouselle__item__section">
-      <img class="carouselle__item__image" src="./asset/image/carousel_slide_1.jpg">
-      <div class="carouselle__item__left__arrow">
-        <img class="carouselle__item__left__arrow__image">
-        <p>left_arrow</p>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="asset/style/style.css" />
+    <link rel="stylesheet" href="asset/style/reboot.css" />
+    <script type="module" src="asset/js/main.js"></script>
+    <title>Cairn Device</title>
+  </head>
+  <body>
+    <header class="header">
+      <div class="header__logo">
+        <img />
       </div>
-      <div class="carouselle__item__right__arrow">
-        <img clas="carouselle__item_right__arrow__image">
-        <p>right_arrow</p>
+      <div class="header__title">
+        <h1>Cairn Devices</h1>
       </div>
-      <div class="carousell__iteme__botom_dot">
-        <img class="carouselle__item__botom_dot__image">
+      <div class="header__dateWidget"></div>
+      <div class="header__nav navHeader">
+        <nav class="navHeader__nav">
+          <ul class="navHeader__ul">
+            <li class="navHeader__li">
+              <a href="#">Accueil</a>
+            </li>
+            <li class="navHeader__li">
+              <a href="#">Mon 2eme lien</a>
+            </li>
+          </ul>
+        </nav>
       </div>
+    </header>
+    <section class="carouselle">
+      <div class="carouselle__leftArrow">
+        <span></span>
       </div>
-    </div>
-    <div class="carousel__item carousel__item--disactive">
-      <h2 class="carouselle__item__title">Actuellement en prévente sur Kisskissbankbank</h2>
-      <div class="carouselle__item__section">
-      <img class="carouselle__item__image" src="./asset/image/carousel_slide_2.jpg">
-      <div class="carouselle__item__left__arrow">
-        <img class="carouselle__item__left__arrow__image">
-        <p>left_arrow</p>
+      <div class="carouselle__image__container">
+        <div class="carouselle__image carouselle__image--active">
+          <img
+            src="./asset/image/carousel_slide_1.jpg"
+            alt="carousel_slide_1.jpg"
+          />
+        </div>
+        <div class="carouselle__image">
+          <img
+            src="./asset/image/carousel_slide_2.jpg"
+            alt="carousel_slide_2.jpg"
+          />
+        </div>
+        <div class="carouselle__image">
+          <img
+            src="./asset/image/carousel_slide_3.jpg"
+            alt="carousel_slide_3.jpg"
+          />
+        </div>
+        <div class="carouselle__image">
+          <img
+            src="./asset/image/carousel_slide_4.jpg"
+            alt="carousel_slide_4.jpg"
+          />
+        </div>
+        <div class="carouselle__botomDot carouselle__botomDot--active"></div>
+        <div class="carouselle__botomDot"></div>
+        <div class="carouselle__botomDot"></div>
+        <div class="carouselle__botomDot"></div>
       </div>
-      <div class="carouselle__item__right__arrow">
-        <img clas="carouselle__item_right__arrow__image">
-        <p>right_arrow</p>
+      <div class="carouselle__rightArrow">
+        <span></span>
       </div>
-      <div class="carousell__iteme__botom_dot">
-        <img class="carouselle__item__botom_dot__image">
+    </section>
+    <section class="article">
+      <div class="article__titleLeft">
+        <hr />
       </div>
-    </div>
-    </div>
-    <div class="carousel__item carousel__item--disactive">
-      <h2 class="carouselle__item__title">Fonctionalitées</h2>
-      <div class="carouselle__item__section">
-      <img class="carouselle__item__image" src="./asset/image/carousel_slide_3.jpg">
-      <div class="carouselle__item__left__arrow">
-        <img class="carouselle__item__left__arrow__image">
-        <p>left_arrow</p>
+      <div class="article__titleText">
+        <h2></h2>
       </div>
-      <div class="carouselle__item__right__arrow">
-        <img clas="carouselle__item_right__arrow__image">
-        <p>right_arrow</p>
+      <div class="article__titleRight">
+        <hr />
       </div>
-      <div class="carousell__iteme__botom_dot">
-        <img class="carouselle__item__botom_dot__image">
+      <div class="article__paragraph">
+        <p class="article__text"></p>
       </div>
+      <div class="article__video">
+        <embed class="article__player" />
       </div>
-    </div>
-    <div class="carousel__item carousel__item--disactive">
-      <h2 class="carouselle__item__title">Actuellement en prévente sur Kisskissbankbank</h2>
-      <div class="carouselle__item__section">
-      <img class="carouselle__item__image" src="./asset/image/carousel_slide_4.jpg">
-      <div class="carouselle__item__left__arrow">
-        <img class="carouselle__item__left__arrow__image">
-        <p>left_arrow</p>
-      </div>
-      <div class="carouselle__item__right__arrow">
-        <img clas="carouselle__item_right__arrow__image">
-        <p>right_arrow</p>
-      </div>
-      <div class="carousell__iteme__botom_dot">
-        <img class="carouselle__item__botom_dot__image">
-      </div>
-      </div>
-    </div>
-  </section> -->
-  <section class="carouselle carouselle__container">
-    <div class="carouselle__item__left__arrow">
-      <span><</span>
-    </div>
-    <div class="carouselle__item__image">
-      <div class="carouselle__item__image__container --active">
-        <img src="./asset/image/carousel_slide_1.jpg" alt="carousel_slide_1.jpg">
-      </div>
-      <div class="carouselle__item__image__container">
-        <img src="./asset/image/carousel_slide_2.jpg" alt="carousel_slide_2.jpg">
-      </div>
-      <div class="carouselle__item__image__container">
-        <img src="./asset/image/carousel_slide_3.jpg" alt="carousel_slide_3.jpg">
-      </div>
-      <div class="carouselle__item__image__container">
-        <img src="./asset/image/carousel_slide_4.jpg" alt="carousel_slide_4.jpg">
-      </div>
-      <div class="carousell__iteme__botom_dot --active"></div>
-      <div class="carousell__iteme__botom_dot"></div>
-      <div class="carousell__iteme__botom_dot"></div>
-      <div class="carousell__iteme__botom_dot"></div>
-    </div>
-    <div class="carouselle__item__right__arrow">
-      <span>></span>
-    </div>
-  </section>
-  <section class="article">
-    <div class="article__title__left">
-      <hr>
-    </div>
-    <div class="article__title__div">
-    <h2 class="article__title__text"></h2>
-    </div>
-    <div class="article__title__right">
-      <hr>
-    </div>
-    <div class="article__paragraph__div">
-      <p class="article__paragraph__text">
-
-      </p>
-    </div>
-    <div class="article__video__container">
-      <embed class="article__video__player">
-    </div>
-  </section>
-  <footer class="footer">
-    
-  </footer>
-</body>
+    </section>
+    <footer class="footer"></footer>
+  </body>
 </html>
