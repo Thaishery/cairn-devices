@@ -6,7 +6,6 @@ export default function menu() {
   const menuLogoHiden = document.getElementsByClassName(
     "navHeader__nav--hiden"
   );
-
   menu[0].addEventListener("click", (e) => {
     if (listHiden[0]) {
       listHiden[0].className = "navHeader__ul--active";
