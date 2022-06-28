@@ -36,15 +36,15 @@ img {
   min-height: 10%;
   height: 40px;
 }
-.header__nav::before {
+.header__nav::after {
   content: "";
-  position: fixed;
-  right: 1em;
-  top: 1em;
-  width: 1em;
-  height: 0.15em;
-  background: black;
-  box-shadow: 0 0.25em 0 0 black, 0 0.5em 0 0 black;
+  display: block;
+  background-image: url("../image/burger.png");
+  background-repeat: no-repeat;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  right: 0.65em;
 }
 .header__navContainer {
   width: 100%;
@@ -79,7 +79,7 @@ img {
 .carouselle__rightArrow,
 .carouselle__leftArrow {
   position: relative;
-  height: 200px;
+  height: 180px;
   width: 20px;
 }
 .carouselle__leftArrow ::after,
@@ -102,16 +102,38 @@ img {
   height: 250px;
   width: 100vh;
 }
-.carouselle__image--active,
-.carouselle__botomDot--active {
+.carouselle__image--active {
   display: inline-block !important;
   width: 100%;
   height: 100%;
 }
-.carouselle__image,
-.carouselle__botomDot {
+.carouselle__image {
   display: none;
 }
+.carouselle__botomDot__container {
+  display: flex;
+  flex-wrap: nowrap;
+}
+.carouselle__botomDot::after {
+  content: "";
+  display: grid;
+  flex-wrap: nowrap;
+  border: 2px solid black;
+  background-color: #c4c4c47a;
+  border-radius: 360%;
+  width: 10px;
+  height: 10px;
+  position: relative;
+  bottom: 6vh;
+  left: 21vh;
+}
+.carouselle__botomDot--active::after {
+  content: ".";
+  text-align: center;
+  line-height: 1px;
+  font-weight: 900;
+}
+
 /* articles */
 .article {
   display: flex;
@@ -141,5 +163,9 @@ img {
 }
 .article__paragraph {
   width: 70%;
+  margin: auto;
+}
+.article__video {
+  width: 80%;
   margin: auto;
 }
