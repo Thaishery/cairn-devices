@@ -4,16 +4,20 @@ export default function carousel() {
   const rightArrow = document.getElementsByClassName("carouselle__rightArrow");
   const leftArrow = document.getElementsByClassName("carouselle__leftArrow");
   var curPos = 0;
-
-  const timedNextSlide = setInterval(nextSlide, 10 * 1000);
-
-  rightArrow[0].addEventListener("click", (e) => {
-    nextSlide(e);
-  });
-  leftArrow[0].addEventListener("click", (e) => {
-    previousSlide(e);
-  });
-
+  // console.log(carouselsImages[0]);
+  if (carouselsImages[0]) {
+    const timedNextSlide = setInterval(nextSlide, 10 * 1000);
+  }
+  if (rightArrow[0]) {
+    rightArrow[0].addEventListener("click", (e) => {
+      nextSlide(e);
+    });
+  }
+  if (leftArrow[0]) {
+    leftArrow[0].addEventListener("click", (e) => {
+      previousSlide(e);
+    });
+  }
   function nextSlide(e) {
     if (e) clearInterval(timedNextSlide);
     carouselsImages[curPos].classList.remove("carouselle__image--active");

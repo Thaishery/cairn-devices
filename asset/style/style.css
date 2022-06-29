@@ -19,7 +19,7 @@ img {
   height: 40px;
 }
 .header__title {
-  width: 220px;
+  width: 200px;
 }
 .header__title h1 {
   line-height: 40px;
@@ -168,4 +168,20 @@ img {
 .article__video {
   width: 80%;
   margin: auto;
+}
+
+/* Footer */
+.footer {
+  background-color: #453e3e4f;
+}
+.footer__list {
+  display: flex;
+  padding: 0 0 0 0;
+  margin-bottom: 0;
+  justify-content: center;
+  /* justify-content: space-around; */
+}
+.footer__listElement {
+  list-style: none;
+  margin: 8px 2px 5px 2px;
 }
