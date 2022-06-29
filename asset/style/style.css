@@ -185,3 +185,24 @@ img {
   list-style: none;
   margin: 8px 2px 5px 2px;
 }
+
+/* FAQ */
+.faq {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  background-color: #d9d9d9;
+}
+.faq__question {
+  display: block;
+  margin-left: 10px;
+}
+.faq__question__cta {
+  text-decoration: none;
+  color: black;
+  margin-right: 15px;
+}
+.faq__response--replier {
+  display: none;
+  flex: 1 1 100%;
+}
