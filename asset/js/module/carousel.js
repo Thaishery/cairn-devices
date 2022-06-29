@@ -6,7 +6,7 @@ export default function carousel() {
   var curPos = 0;
   // console.log(carouselsImages[0]);
   if (carouselsImages[0]) {
-    const timedNextSlide = setInterval(nextSlide, 10 * 1000);
+    var timedNextSlide = setInterval(nextSlide, 10 * 1000);
   }
   if (rightArrow[0]) {
     rightArrow[0].addEventListener("click", (e) => {
@@ -19,7 +19,7 @@ export default function carousel() {
     });
   }
   function nextSlide(e) {
-    if (e) clearInterval(timedNextSlide);
+    if (timedNextSlide) clearInterval(timedNextSlide);
     carouselsImages[curPos].classList.remove("carouselle__image--active");
     dots[curPos].classList.remove("carouselle__botomDot--active");
     if (curPos < carouselsImages.length - 1) curPos++;
@@ -29,7 +29,7 @@ export default function carousel() {
   }
 
   function previousSlide(e) {
-    if (e) clearInterval(timedNextSlide);
+    if (timedNextSlide) clearInterval(timedNextSlide);
     carouselsImages[curPos].classList.remove("carouselle__image--active");
     dots[curPos].classList.remove("carouselle__botomDot--active");
     if (curPos > 0) curPos--;
