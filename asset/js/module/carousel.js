@@ -4,7 +4,7 @@ export default function carousel() {
   const rightArrow = document.getElementsByClassName("carouselle__rightArrow");
   const leftArrow = document.getElementsByClassName("carouselle__leftArrow");
   var curPos = 0;
-  // console.log(carouselsImages[0]);
+
   if (carouselsImages[0]) {
     var timedNextSlide = setInterval(nextSlide, 10 * 1000);
   }
@@ -18,6 +18,7 @@ export default function carousel() {
       previousSlide(e);
     });
   }
+
   function nextSlide(e) {
     if (timedNextSlide) clearInterval(timedNextSlide);
     carouselsImages[curPos].classList.remove("carouselle__image--active");
@@ -27,7 +28,6 @@ export default function carousel() {
     carouselsImages[curPos].classList.add("carouselle__image--active");
     dots[curPos].classList.add("carouselle__botomDot--active");
   }
-
   function previousSlide(e) {
     if (timedNextSlide) clearInterval(timedNextSlide);
     carouselsImages[curPos].classList.remove("carouselle__image--active");
