@@ -196,11 +196,13 @@ img {
 .faq__question {
   display: block;
   margin-left: 10px;
+  max-width: 80%;
 }
 .faq__question__cta {
   text-decoration: none;
   color: black;
   margin-right: 15px;
+  margin-top: 8px;
 }
 .faq__response--replier {
   display: none;
