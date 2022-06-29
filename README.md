@@ -1,2 +1,2 @@
 # cairn-devices
-projet 1er semaistre
+projet 1er semestre
