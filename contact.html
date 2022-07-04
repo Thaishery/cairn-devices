@@ -70,7 +70,40 @@
         </nav>
       </div>
     </header>
-
+    <section>
+      <form class="formulaire">
+        <label for="email" class="formulaire__label"
+          >Entrée votre adresse mail :</label
+        >
+        <p class="formulaire__error formulaire__error--inactive"></p>
+        <br />
+        <input class="formulaire__input" type="email" id="email" name="email" />
+        <br />
+        <label for="subject" class="formulaire__label"
+          >A quel propos souhaitez vous nous contacter?
+        </label>
+        <p class="formulaire__error formulaire__error--inactive"></p>
+        <br />
+        <input
+          class="formulaire__input"
+          type="text"
+          id="subject"
+          name="subject"
+        />
+        <br />
+        <label for="message" class="formulaire__label">Message : </label><br />
+        <p class="formulaire__error formulaire__error--inactive"></p>
+        <textarea class="formulaire__input" id="message" name="message">
+        </textarea>
+        <br />
+        Ajouter une question :
+        <button type="button" class="formulaire__button" id="addField">+</button
+        ><br />
+      </form>
+      <button type="submit" class="formulaire__button">
+        Soumettre le formulaire
+      </button>
+    </section>
     <footer class="footer">
       <nav class="footer__nav">
         <ul class="footer__list">

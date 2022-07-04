@@ -195,6 +195,23 @@ img {
   flex: 1 1 100%;
 }
 
+/* Formulaire */
+.formulaire {
+  min-height: 83vh;
+}
+.formulaire__error--inactive {
+  display: none;
+}
+.formulaire__input {
+  border-radius: 36px;
+}
+.formulaire__input--valid {
+  border: 2px solid green;
+}
+.formulaire__input--invalid {
+  border: 2px solid red;
+}
+
 /* Footer */
 .footer {
   background-color: #453e3e4f;
